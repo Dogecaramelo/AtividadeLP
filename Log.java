@@ -13,7 +13,12 @@ public class Log {
         historico.add(log);
     }
 
+    public void registrarEvento(String evento) {
+        historico.add(evento);
+    }
+
     public void exibirLog() {
+        System.out.println("Log do Sistema:");
         for (String log : historico) {
             System.out.println(log);
         }
